@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hupu Adblock",
+  "description": "屏蔽虎扑的下拉广告",
+  "version": "1.0",
+
+  "permissions": [
+	"tabs", "http://nba.hupu.com/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["http://nba.hupu.com/*"],
+      "js": ["jquery.js","disable.js"]
+    }
+  ]
+}
