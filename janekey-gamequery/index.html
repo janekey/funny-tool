@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>gameQuery - Tutorial 1 - Final result</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.gamequery-0.7.0.js"></script>
+
+    <script type="text/javascript" src="janekey.js"></script>
+    <style type="text/css">
+        html,body{margin: 0;padding: 0;}
+        .start-div a{font-size: 24px; font-family: Microsoft Yahei, verdana; color: white;text-decoration: none;}
+        .start-div a:hover{color: #13A8E8;}
+    </style>
+</head>
+<body >
+<div id="playground" style="width: 700px; height: 250px; background: black;">
+    <div id="welcomeScreen" style="width: 720px; height: 300px; position: absolute; z-index: 100; font-family: verdana, sans-serif;">
+        <div style="position: absolute; top: 230px; width: 720px; color: white;">
+            <center>
+                <!--<div id="loadingNum" style="position: relative; left: 100px; height: 15px; width: 0px; background: red;"></div><br />-->
+                <div><span id="loadingNum">0</span>% (拖动你的鼠标，躲避那些可恶的弹幕)</div>
+                <div class="start-div"><a href="javascript:void(0)" id="startbutton">开始</a></div>
+            </center>
+        </div>
+    </div>
+</div>
+</body>
+</html>
