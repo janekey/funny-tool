@@ -1,0 +1,245 @@
+@CHARSET "UTF-8";
+#sizenav {
+    background: none repeat scroll 0 0 #3D3D3D;
+    bottom: 0;
+    display: none;
+    font-size: 11px;
+    height: 75px;
+    left: 0;
+    line-height: 1em;
+    margin: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+#sizenav > li {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    position: relative;
+    width: 75px;
+}
+#sizenav > li:first-child {
+    background: none repeat scroll 0 center transparent;
+}
+#sizenav > li > a {
+    color: #AAAAAA;
+    display: block;
+    height: 75px;
+    padding-left: 1px;
+    text-decoration: none;
+    width: 74px;
+}
+#sizenav > li.selected > a, #sizenav > li > a:hover, #sizenav > li > a:focus {
+    color: #FFFFFF;
+}
+#sizenav > li > a span.label {
+    display: block;
+    position: absolute;
+    top: 7px;
+    width: 100%;
+}
+#sizenav > li > a span.icon {
+    background-image: url("icon/screenfly.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    left: 18px;
+    opacity: 0.2;
+    position: absolute;
+    top: 25px;
+    transition: opacity 0.3s ease 0s;
+    width: 40px;
+}
+#sizenav > li > a:hover span.icon, #sizenav > li > a:focus span.icon {
+    opacity: 0.4;
+}
+#sizenav > li.desktop > a span.icon {
+    background-position: 0 -40px;
+}
+#sizenav > li.desktop.selected > a span.icon {
+    background-position: -40px -40px;
+    opacity: 1;
+}
+#sizenav > li.tablet > a span.icon {
+    background-position: 0 -80px;
+}
+#sizenav > li.tablet.selected > a span.icon {
+    background-position: -40px -80px;
+    opacity: 1;
+}
+#sizenav > li.mobile > a span.icon {
+    background-position: 0 0;
+}
+#sizenav > li.mobile.selected > a span.icon {
+    background-position: -40px 0;
+    opacity: 1;
+}
+#sizenav > li.television > a span.icon {
+    background-position: 0 -120px;
+}
+#sizenav > li.television.selected > a span.icon {
+    background-position: -40px -120px;
+    opacity: 1;
+}
+#sizenav ul {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    bottom: 75px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0.5em;
+    position: absolute;
+    text-align: left;
+    width: 150px;
+    z-index: 11;
+}
+#sizenav li li {
+    font-weight: normal;
+    line-height: 1.1em;
+    list-style: none outside none;
+    margin: 0;
+}
+#sizenav li li.safari {
+    background: url("icon/browsers.png") no-repeat scroll right 6px transparent;
+}
+#sizenav li li.android {
+    background: url("icon/browsers.png") no-repeat scroll right -54px transparent;
+}
+#sizenav li li.motorola {
+    background: url("icon/browsers.png") no-repeat scroll right -114px transparent;
+}
+#sizenav li li.blackberry {
+    background: url("icon/browsers.png") no-repeat scroll right -174px transparent;
+}
+#sizenav li li.windows {
+    background: url("icon/browsers.png") no-repeat scroll right -234px transparent;
+}
+#sizenav li li.opera {
+    background: url("icon/browsers.png") no-repeat scroll right -294px transparent;
+}
+#sizenav li li:first-child {
+    margin-top: 0;
+}
+#sizenav li li a {
+    border: 1px solid transparent;
+    display: block;
+    padding: 0.5em;
+    color: #399CBD;
+    text-decoration: none;
+}
+#sizenav li li a span {
+    color: #888888;
+    display: block;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-top: 0.2em;
+}
+#sizenav li li a:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+#sizenav li li.selected a {
+    color: #3D3D3D;
+    font-weight: bold;
+}
+#page {
+    margin: auto;
+    width: 100%;
+}
+#help-pop {
+    margin-bottom: 1em;
+}
+#screenfly-form {
+    font-size: 1.5em;
+    margin: 0 0 2em;
+    text-align: center;
+	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#siteurl {
+    margin: 0 0.25em 0 0;
+    padding: 0.5em;
+    vertical-align: text-bottom;
+    width: 15em;
+}
+
+#go {
+    background: none repeat scroll 0 0 #88CB47;
+    display: inline-block;
+    float: none;
+    font-size: 1em;
+    padding: 0.65em 1em;
+    vertical-align: text-bottom;
+    text-decoration: none;
+}
+
+input, textarea, select {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #DDDDDD;
+    font-size: 1.25em;
+    padding: 0.5em;
+}
+input:focus, textarea:focus, select:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #399CBD;
+}
+input[type="checkbox"], input[type="radio"], input[type="image"] {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#viewport {
+    background: none repeat scroll 0 0 #4D4D4D;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    font-size: 0.65em;
+    margin: 0 auto 120px;
+    padding: 0 15px 15px;
+    z-index: 2;
+}
+#viewport-header {
+    font-size: 2em;
+    padding: 0.5em 0;
+    position: relative;
+}
+#viewport-url {
+    display: block;
+    height: 1.2em;
+    overflow: hidden;
+}
+#close-frame {
+    background: url("icon/close.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 37px;
+    position: absolute;
+    right: -25px;
+    text-indent: -9999em;
+    top: -10px;
+    width: 34px;
+}
+#frame {
+    background: url("icon/loading.gif") no-repeat scroll center center #FFFFFF;
+    border: 0 none;
+    margin: 0;
+}
+#viewport-footer {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+#viewport-footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+#viewport-footer label, #viewport-footer input {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#viewport-footer input {
+    margin-right: 0.5em;
+}
